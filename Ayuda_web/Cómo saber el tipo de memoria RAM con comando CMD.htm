@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">   
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<link rel="icon" href="C%C3%B3mo%20saber%20el%20tipo%20de%20memoria%20RAM%20con%20comando%20CMD_files/mga-logo.svg">
+<link rel="stylesheet" type="text/css" href="C%C3%B3mo%20saber%20el%20tipo%20de%20memoria%20RAM%20con%20comando%20CMD_files/mga.css">
+<!--<script data-ad-client="ca-pub-4790906895420415" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+<link rel="canonical" href="http://mgainformatik.com/pc/como-saber-el-tipo-de-memoria-ram-con-comando-cmd">
+<title>Cómo saber el tipo de memoria RAM con comando CMD</title>
+<meta name="description" content="Saber estas líneas de comando nos podrían sacar de apuros a la hora de querer comprar para cambiar la memoria RAM de nuestro ordenador.">
+<meta name="robots" content="noodp">
+<!-- OPEN G-->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Cómo saber el tipo de memoria RAM con comando CMD">
+<meta property="og:description" content="Saber estas líneas de comando nos podrían sacar de apuros a la hora de querer comprar para cambiar la memoria RAM de nuestro ordenador.">
+<meta property="og:url" content="https://mgainformatik.com/pc/como-saber-el-tipo-de-memoria-ram-con-comando-cmd">
+<meta property="og:image" content="https://mgainformatik.com/image-blog/ram-cmd-saber.jpg">
+<meta property="og:site_name" content="MGA INFORMATIK">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="400">
+<!-- fin OPEN G-->
+
+</head>
+
+<body><panel class="drweb_select-panel" style="display: none;">
+  <div class="drweb_tool-panel"> 
+    <div class="drweb_tool-icon drweb_tool-icon_show" data-co="restore-btn" title="Restore"></div> 
+    <div class="drweb_tool-icon drweb_tool-icon_remove" data-co="remove-btn" title="Remove"></div> 
+    <div class="drweb_fit-btn" data-co="fit-btn" title=""></div> 
+  </div> 
+  <span data-co="label">Select the elements you want to hide on this page.</span> 
+  <div class="drweb_btn" data-co="save">Save</div> 
+  <div class="drweb_btn" data-co="cancel">Cancel</div> 
+  <div class="drweb_panel-plug" data-co="plug" style="display: none"></div>
+</panel>
+
+<div id="cab">
+   
+<a href="https://mgainformatik.com/"><img src="C%C3%B3mo%20saber%20el%20tipo%20de%20memoria%20RAM%20con%20comando%20CMD_files/mga-logo.svg" alt="mgainformatik" width="48" height="auto"><h1>MGAINFORMATIK</h1></a>
+
+<div class="bg"><a href="https://mgainformatik.com/reparacion-computadoras-laptops-la-molina">Soporte</a></div>
+<div class="wp"><i class="fa fa-whatsapp" aria-hidden="true"></i> 974 637 756</div>
+    
+<nav class="menu">
+<ul>
+<li><a href="https://mgainformatik.com/internet/">Internet</a></li>
+<li><a href="https://mgainformatik.com/juegos/">Juegos</a></li>
+<li><a href="https://mgainformatik.com/pc/">Pc</a></li>
+<li> <a href="https://mgainformatik.com/xbox/">Xbox</a></li>
+</ul>
+</nav>
+</div>
+
+<div id="all">
+<div id="all-ctd">
+<div id="ctd">
+
+<div class="lad-b"><div class="lad-b-fix">.</div></div>
+
+
+<div class="site-main"><div class="post-single"><h1>Cómo saber el tipo de memoria RAM con comando CMD</h1><h3>Saber
+ estas líneas de comando nos podrían sacar de apuros a la hora de querer
+ comprar para cambiar la memoria RAM de nuestro ordenador.</h3><img class="bimg" src="C%C3%B3mo%20saber%20el%20tipo%20de%20memoria%20RAM%20con%20comando%20CMD_files/ram-cmd-saber.jpg" alt'cómo="" saber="" el="" tipo="" de="" memoria="" ram="" con="" comando="" cmd'="" width="600" height="400"><p><strong>Los comandos ejecutados en la consola de Windows</strong>
+ son muy poderosos y sobre todo nos quitan ese fastidio de ir buscando 
+alguna aplicación que nos haga este trabajo, además si manejas comando 
+seguro que ganaran una mejor opinión de tu cliente, acá te mostrare los <strong>comandos para saber a detalle la memoria RAM</strong> de tu pc o laptop, en el sistema operativo <strong>WINDOWS</strong>.</p>
+<h2>¿Qué es memoria RAM?</h2>
+
+<p><strong>La RAM es memoria volátil</strong> que nuestro equipo 
+almacena para dar rapidez a las solicitudes, siempre y cuando este 
+encendido, cuando mas programas a la vez se ejecuten más <strong>memoria RAM </strong>es necesaria para evitar que se ponga lenta<strong> </strong><strong>(lag).</strong></p>
+
+<p><strong>Ten en cuenta que aumentar memoria NO siempre es la solución </strong>para que tu computador sea más rápido, fíjate en otros factores, como uso de otros procesadores, discos solidos (<strong>SSD, M2</strong>).</p>
+
+<h2>¿Qué tipo de memoria RAM tiene mi equipo?</h2>
+
+<p><strong>Vamos usar la consola CMD</strong>, para esto vamos a presionar las teclas <strong>WINDOWS + S</strong>, para luego escribir <strong>CMD</strong>, y darle clic o <strong>ENTER</strong>.</p>
+
+<p><strong><em>Ahora escribiremos lo&nbsp;siguiente, y le damos ENTER.</em></strong></p>
+
+<blockquote>
+<p><span class="marker">wmic MemoryChip get BankLabel, Capacity, MemoryType, TypeDetail, Speed, Manufacturer</span></p>
+</blockquote>
+
+<p>Una vez ejecutado el comando nos dará como resultado el siguiente informe que tomaremos como ejemplo:</p>
+
+<p><span class="marker">BankLabel&nbsp;&nbsp;&nbsp; 
+Capacity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Manufacturer&nbsp;&nbsp;&nbsp;&nbsp; MemoryType&nbsp;&nbsp; 
+Speed&nbsp;&nbsp;&nbsp; TypeDetail</span></p>
+
+<p><strong><em>BANK 0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+8589934592&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kingston&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1600&nbsp; 
+&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;128</em></strong></p>
+
+<h2>MemoryType tipo de RAM:</h2>
+
+<ul>
+	<li>20 = DDR</li>
+	<li>21 = DDR2</li>
+	<li>24 = DDR3</li>
+</ul>
+<h2>Las demás etiquetas significan</h2>
+
+<ul>
+	<li><strong>BankLabel:</strong> Ranura de la placa base donde está conectado el módulo de RAM.</li>
+	<li><strong>Capacity:</strong> Cantidad de RAM en bytes.</li>
+	<li><strong>Manufacturer:</strong> Fabricante de la memoria.</li>
+	<li><strong>Speed:</strong> Velocidad.</li>
+	<li><strong>TypeDetail:</strong> Tipo de memoria.</li>
+</ul>
+
+<h2>Programas para saber información de nuestro computador</h2>
+
+<p>En la actualidad hay muchas herramientas que se puede usar, entre 
+ellas tenemos a las mas conocidas CPU-Z, Speccy, AIDA64 Extreme, entre 
+otras acá te dejo una lista que te puede ser de utilidad si deseas 
+probar estas herramientas que no solo te darán información del tipo de 
+RAM que estas utilizando si no también detalle mas de tu ordenador.</p>
+
+<h2>Lista de programas para saber los componentes de tu ordenador</h2>
+
+<ul>
+	<li><strong>CPU-Z:</strong> con una interfaz muy sencilla, es una 
+aplicación gratuita que se puede descargar para instalar o ejecutar sin 
+instalar. Da información precisa.</li>
+	<li><strong>Speccy:</strong> Tiene versión demo, pero si deseamos saber algo más se tendría que comprar.</li>
+	<li><strong>AIDA64 Extreme:</strong> Aplicación de pago, se puede bajar
+ la versión prueba para saber lo necesario, pero si queremos algo mas 
+avanzado es necesario pagar la licencia.</li>
+	<li><strong>HWInfo:</strong> Como instalable o como portable es una herramienta que nos muestra más que la <strong><em>ram</em></strong> de nuestro equipo.</li>
+</ul>
+</div></div> 
+<h5>Si este artículo fue de a tu agrado o tal vez deseas mejorar este 
+trabajo puede dejar tus comentarios y ayudar a la comunidad. Se aceptan 
+críticas constructivas, mas no cosas negativas que no ayudan en nada.</h5>
+<h1>Visita la comunidad de facebook</h1>
+<!--commentFB
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=425526831138379";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+end-->
+</div>
+</div>
+</div><!--contenido-->
+<div id="pie"><a href="https://mgainformatik.com/venta-computadoras-accesorios-peru">Tienda</a> | <a href="https://mgainformatik.com/reparacion-computadoras-laptops-la-molina">Soporte</a><br>
+© 2022 mgainformatik | All rights reserved<br> <br>
+<a href="https://mgainformatik.com/politica-de-cookies">Política de cookies</a> | <a href="https://mgainformatik.com/politica-de-privacidad">Política de privacidad</a> | <a href="https://mgainformatik.com/aviso-legal">Aviso legal</a></div>
+<!-- Global site tag (gtag.js) - Google Analytics-->
+<script async="" src="C%C3%B3mo%20saber%20el%20tipo%20de%20memoria%20RAM%20con%20comando%20CMD_files/google-analytics_analytics.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-56880310-2');
+</script>
+</body></html>
