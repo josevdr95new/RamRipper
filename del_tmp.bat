@@ -1,3 +1,5 @@
+rem josevdr95
+rem 12/11/2022
 @echo off    
 del /s /f /q %windir%\temp\*.*    
 rd /s /q %windir%\temp    

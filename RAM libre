@@ -1,0 +1,16 @@
+{NeoBook Function}
+Version=5,80
+Language=VBScript
+Param=[%FreePhysicalMemory]|Variable|Param1
+{End}
+strComputer = "."
+Set objWMIService = GetObject("winmgmts:" _
+    & "{impersonationLevel=impersonate}!\\" _
+    & strComputer & "\root\cimv2")
+Set colSettings = objWMIService.ExecQuery _
+    ("Select * from Win32_OperatingSystem")
+For Each objOperatingSystem in colSettings
+        laten=objOperatingSystem.FreePhysicalMemory
+Next
+
+ nbSetVar "[%FreePhysicalMemory]",laten
