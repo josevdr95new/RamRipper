@@ -44,7 +44,7 @@ VersionCopyright=josevdr95
 VersionMajor=1
 VersionMinor=0
 VersionRelease=0
-VersionBuild=87
+VersionBuild=86
 VersionAutoInc=Yes
 ReqExLevel=1
 EmbeddedFiles="del_tmp.bat=D:\De neoBook\RamRipper\del_tmp.bat"¶"EmptyStandbyList.exe=D:\De neoBook\RamRipper\EmptyStandbyList.exe"¶"HelpMeTaskKill.exe=D:\De neoBook\RamRipper\HelpMeTaskKill.exe"¶"achievement_01.wav=D:\De neoBook\RamRipper\Recursos\achievement_01.wav"
