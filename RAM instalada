@@ -10,8 +10,7 @@ Set objWMIService = GetObject("winmgmts:" _
 Set colSettings = objWMIService.ExecQuery _
     ("Select * from Win32_ComputerSystem")
 For Each objComputer in colSettings
-
-        laten2=objComputer.TotalPhysicalMemory
-         
+        laten2=objComputer.TotalPhysicalMemory 
 Next
+
 nbSetVar "[%TotalPhysicalMemory]",laten2
